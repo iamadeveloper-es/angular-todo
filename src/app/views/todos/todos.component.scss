@@ -1,9 +1,19 @@
 .app-todo{
 
-  &__list{
+  &__create, &__list{
     background-color: rgb(var(--primary));
+  }
+
+  &__create{
+    border-bottom: 1px solid rgb(var(--secondary));
+    border-radius: 5px 5px 0 0;
+    box-shadow: 1px 2px 12px #050507;
+  }
+
+  &__list{
     color: rgb(var(--text-color));
-    border-radius: 3px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 12px #050507;
   }
 }
 

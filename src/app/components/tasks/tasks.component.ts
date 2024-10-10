@@ -1,3 +1,6 @@
+/**
+ * Componente que representa un listado de tareas
+ */
 import { Component, Input, SimpleChanges } from '@angular/core';
 import { Task } from '../task/task.component';
 
@@ -56,7 +59,7 @@ export class TasksComponent {
 
   /**
    * Añade una tarea al listado
-   * @param task Tarea
+   * @param {Task}  task Tarea
    */
   addTask(task: Task){
     this.taskList.push(task)
