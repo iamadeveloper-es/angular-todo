@@ -1,0 +1,20 @@
+<section class="uk-section app-todo">
+  <div class="uk-container uk-container-xsmall">
+    <h1>Todos</h1>
+    <div class="app-todo__create">
+      <form (submit)="onSubmit($event)">
+        <input
+        type="text"
+        class="uk-input uk-margin-bottom"
+        placeholder="Nueva tarea..."
+        name="new-task"
+        [(ngModel)]="newTask">
+        <span class="form-error uk-display-block uk-margin-bottom" *ngIf="showError">{{errorMssg}}</span>
+        <button class="uk-button uk-button-primary" type="submit">Crear</button>
+      </form>
+    </div>
+    <div class="app-todo__list uk-margin-top uk-padding">
+      <app-tasks [newTask]="createNewTask()"></app-tasks>
+    </div>
+  </div>
+</section>

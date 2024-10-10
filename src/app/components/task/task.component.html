@@ -1,0 +1,7 @@
+<div class="app-task">
+  <label>
+    <input class="uk-checkbox" type="checkbox" [checked]="task.completed" (change)="toggleCompleted($event)">
+    {{task.title}}
+  </label>
+  <button class="uk-button uk-button-danger" (click)="deleteItem()">Borrar</button>
+</div>

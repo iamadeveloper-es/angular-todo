@@ -1,0 +1,12 @@
+.app-todo{
+
+  &__list{
+    background-color: rgb(var(--primary));
+    color: rgb(var(--text-color));
+    border-radius: 3px;
+  }
+}
+
+.form-error{
+  color: var(--danger);
+}

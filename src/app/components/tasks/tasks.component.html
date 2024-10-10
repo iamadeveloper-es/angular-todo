@@ -1,0 +1,10 @@
+<div class="app-tasks">
+  <app-task
+  *ngFor="let item of taskList;"
+  [task]="item"
+  (selectedTaskEvent)="deleteItem($event)"
+  (taskCompletedEvent)="updateCompleted($event)"></app-task>
+  <div class="app-tasks__count">
+    <span>{{setCounter()}} todos completados</span>
+  </div>
+</div>
