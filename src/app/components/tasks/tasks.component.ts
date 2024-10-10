@@ -71,7 +71,11 @@ export class TasksComponent {
     this.taskList[itemIndex].completed = ev.isChecked
   }
 
-  setCounter(){
+  /**
+   * Conforma una cadena con el formato n/n del conteo de las tareas completadas/total tareas
+   * @return Cadena con el resultado
+   */
+  setCounter(): string{
     const completed = this.taskList.filter(item => item.completed).length
     return `${completed}/${this.taskList.length}`
   }
